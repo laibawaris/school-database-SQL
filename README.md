@@ -1,13 +1,45 @@
-# School Database SQL Practice
+# School Database Project
 
-This repository contains SQL scripts to practice MySQL database creation, table setup, data insertion, and basic queries.
+This project demonstrates building a simple SQL database for a school system.  
+It includes tables for students and teachers, with constraints and foreign key relationships.
 
-## Current Progress
-- Created `school` database
-- Created `students` table with sample data
+---
 
-## Planned Work
-- Add `courses` table
-- Link `students` and `courses` tables
-- Practice queries: SELECT, JOIN, UPDATE, DELETE
+## Project Structure
+
+1. **`school_database_setup.sql`**  
+   - Creates the initial `students` table with columns: id, name, age  
+   - Inserts sample student records
+
+2. **`teachertable+constraints.sql`**  
+   - Creates `teachers` table with constraints (NOT NULL, UNIQUE, CHECK, AUTO_INCREMENT)  
+   - Inserts sample teacher records
+
+3. **`student_teacher_foreign_key.sql`**  
+   - Adds foreign key linking `students` to `teachers`  
+   - Inserts students with corresponding teacher assignments  
+   - Includes JOIN queries and additional practice queries
+
+---
+
+## How to Run
+
+1. Run files in order:
+   1. `school_database_setup.sql`
+   2. `teachertable+constraints.sql`
+   3. `student_teacher_foreign_key.sql`
+2. Use MySQL Workbench or any MySQL client.
+3. Ensure the `school` database exists (created in the first file).
+
+---
+
+## Skills Demonstrated
+
+- Database creation and usage  
+- Table creation with constraints  
+- Primary keys and foreign keys  
+- Auto-increment columns  
+- INSERT, SELECT, UPDATE, DELETE queries  
+- JOIN operations
+
 
