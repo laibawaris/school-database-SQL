@@ -1,45 +1,47 @@
-# School Database Project
+# School Database Project - SQL
 
-This project demonstrates building a simple SQL database for a school system.  
-It includes tables for students and teachers, with constraints and foreign key relationships.
+This repository contains SQL scripts for learning and practicing SQL basics and advanced queries. The project is designed as a learning roadmap, similar to a step-by-step approach used in Python learning.
 
----
-
-## Project Structure
+## Files
 
 1. **`school database setup.sql`**  
-   - Creates the initial `students` table with columns: id, name, age  
-   - Inserts sample student records
+   - Creates the `students` table.  
+   - Inserts sample data for students.  
+   - Demonstrates basic queries: `SELECT`, `INSERT`, `UPDATE`, `DELETE`.
 
-2. **`teacher table+constraints.sql`**  
-   - Creates `teachers` table with constraints (NOT NULL, UNIQUE, CHECK, AUTO_INCREMENT)  
-   - Inserts sample teacher records
+2. **`teacher table constraints.sql`**  
+   - Creates the `teachers` table with constraints:  
+     - `PRIMARY KEY`  
+     - `AUTO_INCREMENT`  
+     - `NOT NULL`  
+     - `UNIQUE`  
+     - `CHECK`  
+     - `DEFAULT`  
+   - Inserts sample teacher data and shows valid/invalid insert scenarios.
 
 3. **`student teacher foreign key.sql`**  
-   - Adds foreign key linking `students` to `teachers`  
-   - Inserts students with corresponding teacher assignments  
-   - Includes JOIN queries and additional practice queries
+   - Alters the `students` table to add `teacher_id`.  
+   - Adds a `FOREIGN KEY` to link students with teachers.  
+   - Demonstrates `JOIN` queries to combine student and teacher data.
 
----
+4. **`school database advanced.sql`**  
+   - Advanced queries including:  
+     - `GROUP BY` and `HAVING`  
+     - Aggregate functions: `COUNT`, `SUM`, `AVG`, etc.  
+     - Self joins and set operations (`UNION`, `EXCEPT`)  
+     - Transactions: `START TRANSACTION`, `COMMIT`, `ROLLBACK`  
 
-## How to Run
+## Notes
 
-1. Run files in order:
-   1. `school database setup.sql`
-   2. `teacher table+constraints.sql`
-   3. `student teacher foreign key.sql`
-2. Use MySQL Workbench or any MySQL client.
-3. Ensure the `school` database exists (created in the first file).
+- All scripts are written for **MySQL Workbench**.  
+- The project is structured to reflect a **learning progression**, starting from basics to advanced queries.  
+- Use these scripts to practice SQL queries and understand database relationships.
 
----
+## How to Use
 
-## Skills Demonstrated
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/laibawaris/school-database-SQL.git
 
-- Database creation and usage  
-- Table creation with constraints  
-- Primary keys and foreign keys  
-- Auto-increment columns  
-- INSERT, SELECT, UPDATE, DELETE queries  
-- JOIN operations
 
 
